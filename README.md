@@ -20,7 +20,7 @@ Extent Report
 **EXECUTION:**
 
 Clone the project:
-$ git clone <cloning url>
+$ git clone <https://github.com/bommaamarnath92/TreatNewApp.git>
 
 **Go to project path in terminal:**
 
