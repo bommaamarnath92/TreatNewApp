@@ -40,7 +40,7 @@ public class ContinueAsGuestTest extends TestBase
         GuestLogin.MyAccountButton();
         GuestLogin.DiscoveryButton();
 
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         driver.quit();
     }
 }
