@@ -1,14 +1,11 @@
-package PAGES;
+package pages;
 
-import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-
-import java.security.PublicKey;
 
 public class CreateAccountPage
 {
@@ -83,91 +80,91 @@ public class CreateAccountPage
     @AndroidFindBy(id = "com.xpresspa.treatmobile.dev:id/btn_done")
     public WebElement Continuebtn2;
 
-    public void SignInButton()
+    public void signInButton()
     {
         SignInBtn.click();
     }
-    public void CreateAccountLink()
+    public void createAccountLink()
     {
         CreateAccLink.click();
     }
-    public void EmailIdField(String EmailIdField)
+    public void emailIdField(String EmailIdField)
     {
         EmailId.sendKeys(EmailIdField);
     }
-    public void PasswordField(String PasswordField)
+    public void passwordField(String PasswordField)
     {
         Password.sendKeys(PasswordField);
     }
-    public void HidePassword()
+    public void hidePassword()
     {
         HideTextIcon.click();
     }
-    public void UnHidePassword()
+    public void unHidePassword()
     {
         UnHideTextIcon.click();
     }
-    public void ContinueButton()
+    public void continueButton()
     {
         ContinueBtn.click();
     }
-    public void FirstNameField(String FirstNameField)
+    public void firstNameField(String FirstNameField)
     {
         FirstName.sendKeys(FirstNameField);
     }
-    public void LastNameField(String LastNameField)
+    public void lastNameField(String LastNameField)
     {
         LastName.sendKeys(LastNameField);
     }
-    public void SelectCalendar()
+    public void selectCalendar()
     {
         SelectDate.click();
     }
-    public void SelectDate()
+    public void selectDate()
     {
         SelectOk.click();
     }
-    public void GenderField(String GenderField)
+    public void genderField(String GenderField)
     {
         SelectGender.sendKeys(GenderField);
     }
-    public void PhoneNumberField(String PhoneNumberField)
+    public void phoneNumberField(String PhoneNumberField)
     {
         PhoneNumber.sendKeys(PhoneNumberField);
     }
-    public void AddressLine1Field(String AddressLine1Field)
+    public void addressLine1Field(String AddressLine1Field)
     {
         AddressLine1.sendKeys(AddressLine1Field);
     }
-    public void AddressLine2Field(String AddressLine2Field)
+    public void addressLine2Field(String AddressLine2Field)
     {
         AddressLine2.sendKeys(AddressLine2Field);
     }
-    public void CityField(String CityField)
+    public void cityField(String CityField)
     {
         City.sendKeys(CityField);
     }
-    public void SelectStateField(String SelectStateField)
+    public void selectStateField(String SelectStateField)
     {
         SelectState.sendKeys(SelectStateField);
     }
-    public void EnterZipCodeField(String EnterZipCodeField)
+    public void enterZipCodeField(String EnterZipCodeField)
     {
         EnterZipCode.sendKeys(EnterZipCodeField);
     }
-    public void TermsOfServiceCheck()
+    public void termsOfServiceCheck()
     {
         TermsOfService.click();
     }
-    public void EndUserAgreementCheck()
+    public void endUserAgreementCheck()
     {
         EndUserAgree.click();
     }
-    public void PrivacyPolicyCheck()
+    public void privacyPolicyCheck()
     {
         PrivacyPolicy.click();
     }
-    public void ContinueButtonCA()
+    public void continueButtonCA()
     {
         Continuebtn2.click();
     }

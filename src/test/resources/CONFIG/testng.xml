@@ -2,10 +2,10 @@
 <suite name="TreatApp">
     <test name = "TreatTest">
     <classes>
-        <class name = "TESTS.GetStartedTest"/>
-        <class name = "TESTS.CreateAccountTest"/>
-        <class name = "TESTS.SignInTest"/>
-        <class name = "TESTS.ContinueAsGuestTest"/>
+        <class name = "tests.GetStartedTest"/>
+<!--        <class name = "tests.CreateAccountTest"/>-->
+<!--        <class name = "tests.SignInTest"/>-->
+<!--        <class name = "tests.ContinueAsGuestTest"/>-->
 <!--        <methods>-->
 <!--            <include></include>-->
 <!--            <exclude></exclude>-->
@@ -13,6 +13,6 @@
     </classes>
     </test>
     <listeners>
-        <listener class-name="UTILITIES.ExtentReports"/>
+        <listener class-name = "utilities.ExtentReports"/>
     </listeners>
 </suite>

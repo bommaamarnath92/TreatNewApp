@@ -1,4 +1,4 @@
-package PAGES;
+package pages;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -27,19 +27,19 @@ public class GetStartedPage
     public WebElement navigateDown;
 
 
-    public String TreatWelcomeNote()
+    public String treatWelcomeNote()
     {
         return TreatWelcomeInfo.getText();
     }
-    public void GetStartedButton()
+    public void getStartedButton()
     {
         getStartedbtn.click();
     }
-    public void NavigateForward()
+    public void navigateForward()
     {
         navigateUp.click();
     }
-    public void NavigateBack()
+    public void navigateBack()
     {
         navigateDown.click();
     }

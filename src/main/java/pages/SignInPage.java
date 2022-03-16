@@ -1,4 +1,4 @@
-package PAGES;
+package pages;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -23,15 +23,15 @@ public class SignInPage
     @AndroidFindBy(id = "com.xpresspa.treatmobile.dev:id/btn_login")
     public WebElement LoginBtn;
 
-    public void AddEmailId(String AddEmailId)
+    public void addEmailId(String AddEmailId)
     {
         EnterEmail.sendKeys(AddEmailId);
     }
-    public void AddPassword(String AddPassword)
+    public void addPassword(String AddPassword)
     {
         EnterPassword.sendKeys(AddPassword);
     }
-    public void LoginInButton() throws InterruptedException
+    public void loginInButton() throws InterruptedException
     {
         LoginBtn.click();
     }

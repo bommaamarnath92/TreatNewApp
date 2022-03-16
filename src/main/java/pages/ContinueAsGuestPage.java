@@ -1,4 +1,4 @@
-package PAGES;
+package pages;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -34,31 +34,31 @@ public class ContinueAsGuestPage {
     @AndroidFindBy(id = "com.xpresspa.treatmobile.dev:id/my_account")
     public WebElement MyAccountBtn;
 
-    public void ContinueAsGuestButton()
+    public void continueAsGuestButton()
     {
         ContinueAsGuestBtn.click();
     }
-    public String DiscoverTitle()
+    public String discoverTitle()
     {
         return DiscoverPage.getText();
     }
-    public void DiscoveryButton()
+    public void discoveryButton()
     {
         DiscoveryBtn.click();
     }
-    public void BookingsButton()
+    public void bookingsButton()
     {
         BookingsBtn.click();
     }
-    public void ChatButton()
+    public void chatButton()
     {
         ChatBtn.click();
     }
-    public void HealthWalletButton()
+    public void healthWalletButton()
     {
         HealthWalletBtn.click();
     }
-    public void MyAccountButton()
+    public void myAccountButton()
     {
         MyAccountBtn.click();
     }

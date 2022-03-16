@@ -1,4 +1,4 @@
-package UTILITIES;
+package utilities;
 
 import io.appium.java_client.android.AndroidDriver;
 import org.apache.commons.io.FileUtils;

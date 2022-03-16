@@ -1,10 +1,9 @@
-package TESTS;
+package tests;
 
-import BASECLASS.TestBase;
-import PAGES.CreateAccountPage;
-import PAGES.GetStartedPage;
-import PAGES.SignInPage;
-import UTILITIES.GetScreenShots;
+import baseclass.TestBase;
+import pages.CreateAccountPage;
+import pages.SignInPage;
+import utilities.GetScreenShots;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import org.testng.annotations.Test;
@@ -20,19 +19,19 @@ public class SignInTest extends TestBase
 
         CreateAccountPage CreateProfile = new CreateAccountPage(driver);
         Thread.sleep(3000);
-        CreateProfile.SignInButton();
+        CreateProfile.signInButton();
 
         SignInPage LogIn = new SignInPage(driver);
-        LogIn.AddEmailId("amarnath.bomma@mutualmobile.com");
-        LogIn.AddPassword("Bomma@123");
+        LogIn.addEmailId("amarnath.bomma@mutualmobile.com");
+        LogIn.addPassword("Bomma@123");
 
-        CreateProfile.HidePassword();
-        CreateProfile.UnHidePassword();
+        CreateProfile.hidePassword();
+        CreateProfile.unHidePassword();
 
         Thread.sleep(1000);
         GetScreenShots.getScreenShot("Sign In", driver);
 
-        LogIn.LoginInButton();
+        LogIn.loginInButton();
 
         Thread.sleep(5000);
         driver.quit();

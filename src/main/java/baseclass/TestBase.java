@@ -1,11 +1,8 @@
-package BASECLASS;
+package baseclass;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
@@ -13,7 +10,8 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Properties;
 
-public class TestBase {
+public class TestBase
+{
     public static AndroidDriver<AndroidElement> capabilities(String appName) throws IOException {
 
         // Add global properties folder and use the properties //
@@ -53,4 +51,5 @@ public class TestBase {
 
         return driver;
     }
+
 }
