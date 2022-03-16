@@ -29,13 +29,13 @@ public class TestBase
         String device = (String) prop.get("device");
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "device");
 
-        // Set the capabilities for the real Android device //
+//        Set the capabilities for the real Android device //
 //        capabilities.setCapability(MobileCapabilityType.UDID, "DI4HQSUGCQY9PBHE");
 //        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
 //        capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 //        capabilities.setCapability(MobileCapabilityType.NO_RESET, "true");
 //
-//        // Download the APK Info app from the play store to see below capabilities //
+//        Download the APK Info app from the play store to see below capabilities //
 //        capabilities.setCapability("appPackage", "com.xpresspa.treatmobile.dev");
 //        capabilities.setCapability("appActivity", "com.xpresspa.treatmobile.ui.activities.splash.SplashActivity");
 

@@ -42,7 +42,7 @@ public class GetStartedTest extends TestBase {
         welcomeScreens.navigateForward();
         welcomeScreens.navigateForward();
 
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         GetScreenShots.getScreenShot("On Board Screen 1", driver);
 
         welcomeScreens.navigateBack();

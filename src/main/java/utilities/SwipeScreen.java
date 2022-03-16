@@ -34,6 +34,6 @@ public class SwipeScreen implements IReporter {
         int endYCoordinate = (height/7)*(yEnd);
 
         action.longPress(longPressOptions().withPosition(PointOption.point(startXCoordinate, startYCoordinate))
-                .withDuration(Duration.ofSeconds(1))).moveTo(PointOption.point(endXCoordinate, endYCoordinate)).release().perform();
+                .withDuration(Duration.ofMillis(500))).moveTo(PointOption.point(endXCoordinate, endYCoordinate)).release().perform();
     }
 }
