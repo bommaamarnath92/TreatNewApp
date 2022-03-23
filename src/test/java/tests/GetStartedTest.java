@@ -3,7 +3,7 @@ package tests;
 import baseclass.TestBase;
 import io.appium.java_client.TouchAction;
 import pages.GetStartedPage;
-import utilities.GetScreenShots;
+import utilities.ScreenShots;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import org.testng.Assert;
@@ -43,14 +43,14 @@ public class GetStartedTest extends TestBase {
         welcomeScreens.navigateForward();
 
         Thread.sleep(1000);
-        GetScreenShots.getScreenShot("On Board Screen 1", driver);
+        ScreenShots.getScreenShot("On Board Screen 1", driver);
 
         welcomeScreens.navigateBack();
         welcomeScreens.navigateBack();
         welcomeScreens.navigateBack();
 
         Thread.sleep(1000);
-        GetScreenShots.getScreenShot("On Board Screen 2", driver);
+        ScreenShots.getScreenShot("On Board Screen 2", driver);
 
         Thread.sleep(1000);
         driver.quit();

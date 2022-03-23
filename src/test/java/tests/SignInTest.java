@@ -3,7 +3,7 @@ package tests;
 import baseclass.TestBase;
 import pages.CreateAccountPage;
 import pages.SignInPage;
-import utilities.GetScreenShots;
+import utilities.ScreenShots;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import org.testng.annotations.Test;
@@ -29,7 +29,7 @@ public class SignInTest extends TestBase
         CreateProfile.unHidePassword();
 
         Thread.sleep(1000);
-        GetScreenShots.getScreenShot("Sign In", driver);
+        ScreenShots.getScreenShot("Sign In", driver);
 
         LogIn.loginInButton();
 

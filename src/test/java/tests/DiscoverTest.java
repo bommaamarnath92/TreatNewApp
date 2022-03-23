@@ -1,12 +1,9 @@
 package tests;
 
 import baseclass.TestBase;
-import io.appium.java_client.MobileBy;
-import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -14,8 +11,7 @@ import org.testng.annotations.Test;
 import pages.CreateAccountPage;
 import pages.DiscoverPage;
 import pages.SignInPage;
-import utilities.GetScreenShots;
-import utilities.SwipeScreen;
+import utilities.ScreenShots;
 
 import java.util.concurrent.TimeUnit;
 
@@ -50,7 +46,7 @@ public class DiscoverTest extends TestBase {
         System.out.println(DiscoverTitleCheck);
 
         Thread.sleep(1000);
-        GetScreenShots.getScreenShot("Discover_1", driver);
+        ScreenShots.getScreenShot("Discover_1", driver);
 
         String TravelTitleCheck = TitleCheck.getTravelTitle();
         Assert.assertEquals(TravelTitleCheck, "Travel");
@@ -61,7 +57,7 @@ public class DiscoverTest extends TestBase {
         System.out.println(HealthTitleCheck);
 
         Thread.sleep(1000);
-        GetScreenShots.getScreenShot("Discover_2", driver);
+        ScreenShots.getScreenShot("Discover_2", driver);
 
         Thread.sleep(1000);
         driver.quit();

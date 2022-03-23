@@ -8,7 +8,7 @@ import org.testng.IReporter;
 
 import java.io.File;
 
-public class GetScreenShots implements IReporter
+public class ScreenShots implements IReporter
 {
     public static void getScreenShot(String screenshotName, AndroidDriver driver) throws Exception
     {

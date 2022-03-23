@@ -2,12 +2,11 @@ package tests;
 
 import baseclass.TestBase;
 import pages.ContinueAsGuestPage;
-import utilities.GetScreenShots;
+import utilities.ScreenShots;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import utilities.SwipeScreen;
 
 import java.util.concurrent.TimeUnit;
 
@@ -28,14 +27,14 @@ public class ContinueAsGuestTest extends TestBase
         System.out.println(DiscoverText);
 
         Thread.sleep(1000);
-        GetScreenShots.getScreenShot("Continue As Guest 1", driver);
+        ScreenShots.getScreenShot("Continue As Guest 1", driver);
 
         GuestLogin.discoveryButton();
         GuestLogin.bookingsButton();
         GuestLogin.chatButton();
 
         Thread.sleep(1000);
-        GetScreenShots.getScreenShot("Continue As Guest 2", driver);
+        ScreenShots.getScreenShot("Continue As Guest 2", driver);
 
         GuestLogin.healthWalletButton();
         GuestLogin.myAccountButton();

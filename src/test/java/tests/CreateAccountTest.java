@@ -2,7 +2,7 @@ package tests;
 
 import baseclass.TestBase;
 import pages.CreateAccountPage;
-import utilities.GetScreenShots;
+import utilities.ScreenShots;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import org.testng.annotations.Test;
@@ -28,7 +28,7 @@ public class CreateAccountTest extends TestBase {
         CreateProfile.unHidePassword();
 
         Thread.sleep(1000);
-        GetScreenShots.getScreenShot("Create Account 1", driver);
+        ScreenShots.getScreenShot("Create Account 1", driver);
 
         CreateProfile.continueButton();
 
@@ -47,7 +47,7 @@ public class CreateAccountTest extends TestBase {
         CreateProfile.selectStateField("Texas");
 
         Thread.sleep(1000);
-        GetScreenShots.getScreenShot("Create Account 2", driver);
+        ScreenShots.getScreenShot("Create Account 2", driver);
 
         //CreateProfile.enterZipCodeField("50009");
 
